@@ -1,0 +1,4 @@
+ls-d4726acdb2051d7693a0a38f57e94f85bff7cc80.cjowradokmpk.eu-west-2.rds.amazonaws.com
+dbmasteruser
+JoanaJeon1997_
+dbmaster

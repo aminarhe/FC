@@ -1,0 +1,35 @@
+<head>
+	{% include "head.html" %}
+	<link rel="stylesheet" type="text/css" href="/static/css/home.css">
+</head>
+<body>
+	{% include "header.html" %}
+	<main class="fullbox">
+		<div class="courses">
+			<div class="course locked" id="course-python">
+				<img src="/static/images/python.png" alt="">
+				<p class="course-name">Python</p>
+				<span class="comming-soon">Comming soon!</span>
+			</div>
+			<div class="course" id="course-js">
+				<img src="/static/images/js.png" alt="">
+				<p class="course-name">JS Introduction</p>
+				<p class="course-description">
+					An interactive practice-based introduction to JavaScript. Interesting storyline with gamified challenges.
+				</p>
+				<p class="course-progress">Lvl. 1</p>
+				<div class="progressbar" id="js">
+					<script>
+						create_progressbar("#js");
+					</script>
+				</div>
+				<a href="/{{username}}/courses/js" class="course-btn">Continue</a>
+			</div>
+			<div class="course locked" id="course-htmlcss">
+				<img src="/static/images/htmlcss.png" alt="">
+				<p class="course-name">HTML & CSS</p>
+				<span class="comming-soon">Comming soon!</span>
+			</div>
+		</div>
+	</main>
+</body>

@@ -1,0 +1,29 @@
+<head>
+	{% include "head.html" %}
+	<link rel="stylesheet" type="text/css" href="/static/css/form.css">
+</head>
+<body>
+	{% include "header.html" %}
+	<main class="fullbox">
+		<form id="account-form" action="/account/{{username}}" method="post">
+			<h2>Profile</h2>
+
+			<label for="firstname">First Name</label>
+			<input type="name" value="{{firstname}}" name="firstname" id="firstname">
+
+			<label for="surname">Surname</label>
+			<input type="name" value="{{surname}}" name="surname" id="surname">
+
+			<label for="email">Email</label>
+			<input type="email" value="{{email}}" name="email" id="email">
+
+			<label for="nickname">Nickname</label>
+			<input type="text" value="{{nickname}}" name="nickname" id="nickname">
+
+			<label for="password">Password</label>
+			<input type="password" value="1234567890" name="password" id="password">
+
+			<button type="submit" title="Save Changes">Save changes</button>
+		</form>
+	</main>
+</body>

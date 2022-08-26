@@ -1,0 +1,129 @@
+header {
+    position: sticky;
+    top: 0;
+    background: url(/static/images/background2.png);
+    background-size: cover;
+    background-position: top;
+}
+
+.header-block span {
+    color: var(--color);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.main-block {
+    width: 100%;
+    min-width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: var(--border-radius);
+}
+
+.main-block .map {
+    width: 100%;
+    background: url("/static/images/map2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    border-radius: var(--border-radius);
+}
+
+.task {
+    width: 100%;
+    min-height: 250px;
+    overflow-y: auto;
+    color: black;
+    background: white;
+    box-shadow: 0 0 10px black;
+    border-radius: var(--border-radius);
+    padding: 15px;
+}
+
+.task h3 {
+    color: var(--color);
+}
+
+.task p {
+    font-size: 15px;
+}
+
+.console {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    color: white;
+    background: rgb(32, 34, 37);
+    border: 2px solid white;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 10px;
+}
+
+.console textarea {
+    background: none;
+}
+
+.console .editor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.console .editor #numbers {
+    width: 40px;
+    border: none;
+    color: var(--color) !important;
+    background: none !important;
+    overflow-y: hidden;
+    resize: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.console .editor #code {
+    width: 100% !important;
+    height: 99% !important;
+    resize: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    overflow-y: hidden;
+}
+
+.console-btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: none !important;
+}
+
+.console-btns img {
+    width: 45px;
+    height: 45px;
+    transition: 0.2s ease;
+} .console-btns img:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+    }
+}

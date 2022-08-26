@@ -1,0 +1,26 @@
+<header>
+    <div class="header-container">
+        <div class="header-block">
+            <img src="/static/images/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="header-block links">
+            <a href="/home/{{username}}">Home</a>
+            <a href="/profile/{{username}}">Profile</a>
+        </div>
+        <div class="header-block dropdown-container">
+            <div class="profile">
+                <div class="profile-name">
+                    <p>{{username}}</p>
+                </div>
+                <img src="/static/images/avatar.png" alt="profile" class="avatar-img" onclick="dropdown_menu()">
+            </div>
+            <div class="dropdown">
+                <div class="mobile">
+                    <a href="/home/{{username}}">Home</a>
+                    <a href="/profile/{{username}}">Profile</a>
+                </div>
+                <a href="/logout/{{username}}" class="logout">Log out</a>
+            </div>
+        </div>
+    </div>
+</header>

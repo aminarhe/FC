@@ -1,0 +1,34 @@
+<head>
+	{% include "head.html" %}
+	<script src="/static/js/libraries/number_lines.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/static/css/course.css">
+
+	<script src="/static/js/course.js"></script>
+	<script src="/static/js/console.js"></script>
+</head>
+<body>
+	{% include "header-course.html" %}
+	<main>
+		<div class="main-block">
+			<div class="map"></div>
+		</div>
+		<div class="main-block">
+			<div class="task">
+				<h3>Task 📋</h3>
+				<p>
+					Welcome to Flexbox Froggy. A game in which you have to help Frogy the Frog and his friends by writing CSS code! P A game in which you have to help Frogy the Frog and his friends by writing CSS code! Point this frog A game in which you have to help Frogy the Frog and his friends by writing CSS code! Point this frogoint this frog to the lily on the right using the justify-content property, which aligns the elements horizontally and takes the following values: flex-start: The elements are aligned to the left side of the container. flex-end: Items are aligned to the right side of the container. center: Elements are aligned to the center of the container. space-between: Elements are displayed with equal spacing between them. space-around: Elements are rendered with equal spacing around them. For example, justify-content: flex-end; move the frog to the right.
+				</p>
+			</div>
+			<div class="console">
+				<h3>Console</h3>
+				<div class="editor">
+					<textarea name="code" id="code" placeholder="Write your code here"></textarea>
+				</div>
+				<div class="console-btns">
+					<img src="/static/images/run.png"    alt="run" id="run" onclick="get_code('{{username}}')">
+					<img src="/static/images/return.png" alt="run" id="return" onclick="clear_console()">
+				</div>
+			</div>
+	</main>
+</body>

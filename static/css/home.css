@@ -1,0 +1,118 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+}
+
+
+main .courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.courses .course {
+    position: relative;
+
+    width: 350px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+    border-radius: var(--border-radius);
+    background: white;
+
+    color: black;
+}
+
+.progressbar {
+    height: 8px;
+    gap: 3px;
+} .progressbar .done {
+    background: var(--color);
+}
+
+.course img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    right: 10px;
+}
+
+.course-progress {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.course-name {
+    font-weight: bold;
+}
+
+.course-description {
+    width: 80%;
+    font-size: 16px;
+}
+
+.comming-soon {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 75px);
+    font-size: 20px;
+}
+
+.course-btn {
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: var(--color);
+    border: 1px solid var(--color);
+    border-radius: var(--border-radius);
+    padding: 8px 20px;
+    transition: all 0.3s;
+} .course-btn:hover {
+    background: white;
+    color: var(--color);
+}
+
+.courses .locked {
+    filter:  brightness(40%);
+}
+
+
+@media (max-width: 789px) {
+    header {
+        background: #04041c;
+    }
+    header .links {
+        display: none;
+    }
+    main {
+        align-items: flex-start;
+    }
+    .fullbox {
+        height: auto !important;
+    }
+    .courses {
+        flex-wrap: wrap;
+    }
+    #course-js      {order: 1;}
+    #course-python  {order: 2;}
+    #course-htmlcss {order: 3;}
+}

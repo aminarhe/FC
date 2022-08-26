@@ -1,0 +1,19 @@
+.progressbar {
+    width: 100%;
+    height: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.progressbar .progressbar-part {
+    width: 100%;
+    height: 100%;
+}
+
+.progressbar .done {
+    background: #11da61;
+}
+
+.progressbar .locked-part {
+    background: #595959;
+}
