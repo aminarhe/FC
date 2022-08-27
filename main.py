@@ -48,7 +48,7 @@ def course(username):
     isLogged(username)
     course = "js"
     level = 1
-    return redirect("https://funcode-game.herokuapp.com/")
+    return redirect("https://funcode-js-introduction.herokuapp.com/")
     return render_template(
         "course.html", 
         title = "JS", 
